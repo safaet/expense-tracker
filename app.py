@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 # from utility import login
 from src.db_connection import get_database_connection
+from src.expense_op import save_expense
 
 
 logo_image = Image.open("img/company_logo.png")
@@ -36,12 +37,18 @@ def menu():
     task = st.sidebar.selectbox('--------',
                                 ('--------',
                                  'Save Expense Record',
-                                 'Parameter Insertion'
+                                 'Parameter Insertion',
                                  'Reporting'))
     
     if task == 'Save Expense Record':
         cursor, db = get_database_connection()
         save_expense(cursor, db)
+
+    elif task == 'Reporting':
+        pass
+    
+    elif task == 'Parameter Insertion':
+        pass
 
 # @login
 def main():
