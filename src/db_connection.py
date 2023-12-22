@@ -4,7 +4,7 @@ import mysql.connector as mysql
 with open('./config.yaml', 'r') as f:
     configs = yaml.load(f, Loader=yaml.FullLoader)
     db_credintials  = configs['db']
-    email_sender = configs['email_sender']
+    # email_sender = configs['email_sender']
 
 
 def get_database_connection():
