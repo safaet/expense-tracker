@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-# from utility import login
+from utility import login
 from src.db_connection import get_database_connection
 from src.expense_op import save_expense
 
@@ -50,8 +50,10 @@ def menu():
     elif task == 'Parameter Insertion':
         pass
 
-# @login
+@login
 def main():
+    cols1, cols2, cols3 = st.columns((1, 4, 1))
+    cols2.markdown("<h1 style='text-align: left;margin-top:-2rem; margin-left:1rem; color: #E12D06;'>Personal Expense Tracker</h1>", unsafe_allow_html=True)
     menu()
 
 

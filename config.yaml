@@ -1,18 +1,18 @@
 # authentication credentials
-# credentials:
-#   usernames:
-#     kalim:
-#       email: kalim@gmail.com
-#       name: Kalim Amzad
-#       password: $2b$12$Vya.5Gw0ur0pDxsjt22/suzsNMS/xXYti30GXZZFQ62nUWwmcLJFm
+credentials:
+  usernames:
+    safaet:
+      email: safaet@gmail.com
+      name: safaet jaman
+      password: $2b$12$.9wlECTAivmpbLnMais66uDV0WMjjk6dWosWPXL/u81VH0.wiaQi.
 
-# cookie:
-#   expiry_days: 1
-#   key: some_signature_key
-#   name: some_cookie_name
-# preauthorized:
-#   emails:
-#   - kalim@growwithdata.net
+cookie:
+  expiry_days: 1
+  key: some_signature_key
+  name: some_cookie_name
+preauthorized:
+  emails:
+  - safat@growwithdata.net
 
 
 
@@ -22,9 +22,9 @@ db:
   user: "abstract-programmer"
   passwd: "example-password"
   database: "ExpenseDB"
-  # auth_plugin: "mysql_native_password"
+  auth_plugin: "mysql_native_password"
 
 
-# email_sender:
-#   email: "kalim.resource@gmail.com"
-#   pass: "6554321"
+email_sender:
+  email: "kalim.resource@gmail.com"
+  pass: "abc"
